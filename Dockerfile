@@ -22,7 +22,7 @@ RUN git clone https://github.com/mophos/mmis-frontend-dist \
 
 COPY ./server-script/ .
 
-RUN npm i express
+RUN npm init -y && npm i express
 
 COPY ./config/nginx.conf /etc/nginx
 

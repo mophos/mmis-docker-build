@@ -26,31 +26,38 @@
     },
     {
       "name": "contract-api",
-      "script": "./mmis-contract-backend/src/bin/www.ts"
+      "script": "./mmis-contract-backend/app/bin/www.js",
+      "wait_ready": true
     },
     {
       "name": "inventory-api",
-      "script": "./mmis-inventory-backend/app/bin/www.js"
+      "script": "./mmis-inventory-backend/app/bin/www.js",
+      "wait_ready": true
     },
     {
       "name": "management-api",
-      "script": "./mmis-management-backend/app/bin/www.js"
+      "script": "./mmis-management-backend/app/bin/www.js",
+      "wait_ready": true
     },
     {
       "name": "material-api",
-      "script": "./mmis-material-backend/app/bin/www.js"
+      "script": "./mmis-material-backend/app/bin/www.js",
+      "wait_ready": true
     },
     {
       "name": "planning-api",
-      "script": "./mmis-planning-backend/app/bin/www.js"
+      "script": "./mmis-planning-backend/app/bin/www.js",
+      "wait_ready": true
     },
     {
       "name": "portal-api",
-      "script": "./mmis-portal-backend/app/bin/www.js"
+      "script": "./mmis-portal-backend/app/bin/www.js",
+      "wait_ready": true
     },
     {
       "name": "purchase-api",
-      "script": "./mmis-purchase-backend/app/bin/www.js"
+      "script": "./mmis-purchase-backend/app/bin/www.js",
+      "wait_ready": true
     }
   ]
 }
