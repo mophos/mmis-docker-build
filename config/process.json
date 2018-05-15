@@ -25,6 +25,10 @@
       "script": "./purchase-web-server.js"
     },
     {
+      "name": "planning-web",
+      "script": "./planning-web-server.js"
+    },
+    {
       "name": "contract-api",
       "script": "./mmis-contract-backend/app/bin/www.js",
       "wait_ready": true
