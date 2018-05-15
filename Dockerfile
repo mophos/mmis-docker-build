@@ -8,17 +8,29 @@ RUN git clone https://github.com/mophos/mmis-frontend-dist \
   && git clone https://github.com/mophos/mmis-inventory-backend \
   && cd mmis-inventory-backend && npm i && npm run build && cd .. \
   && git clone https://github.com/mophos/mmis-purchase-backend \
-  && cd mmis-purchase-backend && npm i && npm run build && cd .. \
+  && cd mmis-purchase-backend \
+  && mv views/css.pug.txt views/css.pug \
+  && npm i && npm run build && cd .. \
   && git clone https://github.com/mophos/mmis-material-backend \
-  && cd mmis-material-backend && npm i && npm run build && cd .. \
+  && cd mmis-material-backend \
+  && mv views/css.pug.txt views/css.pug \
+  && npm i && npm run build && cd .. \
   && git clone https://github.com/mophos/mmis-management-backend \
-  && cd mmis-management-backend && npm i && npm run build && cd .. \ 
+  && cd mmis-management-backend \
+  && mv views/css.pug.txt views/css.pug \
+  && npm i && npm run build && cd .. \ 
   && git clone https://github.com/mophos/mmis-portal-backend \
-  && cd mmis-portal-backend && npm i && npm run build && cd .. \ 
+  && cd mmis-portal-backend \
+  && mv views/css.pug.txt views/css.pug \
+  && npm i && npm run build && cd .. \ 
   && git clone https://github.com/mophos/mmis-contract-backend \
-  && cd mmis-contract-backend && npm i && npm run build && cd .. \ 
+  && cd mmis-contract-backend \
+  && mv views/css.pug.txt views/css.pug \
+  && npm i && npm run build && cd .. \ 
   && git clone https://github.com/mophos/mmis-planning-backend \
-  && cd mmis-planning-backend && npm i && npm run build && cd ..
+  && cd mmis-planning-backend \
+  && mv views/css.pug.txt views/css.pug \
+  && npm i && npm run build && cd ..
 
 COPY ./server-script/ .
 
