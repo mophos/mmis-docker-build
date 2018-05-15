@@ -62,6 +62,11 @@
       "name": "purchase-api",
       "script": "./mmis-purchase-backend/app/bin/www.js",
       "wait_ready": true
+    },
+    {
+      "name": "document-api",
+      "script": "./mmis-documents-management/app/bin/www.js",
+      "wait_ready": true
     }
   ]
 }

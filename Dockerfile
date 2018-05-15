@@ -6,7 +6,9 @@ WORKDIR /home/mmis
 
 RUN git clone https://github.com/mophos/mmis-frontend-dist \
   && git clone https://github.com/mophos/mmis-inventory-backend \
-  && cd mmis-inventory-backend && npm i && npm run build && cd .. \
+  && cd mmis-inventory-backend \
+  && mv views/css.pug.txt views/css.pug \
+  && npm i && npm run build && cd .. \
   && git clone https://github.com/mophos/mmis-purchase-backend \
   && cd mmis-purchase-backend \
   && mv views/css.pug.txt views/css.pug \
@@ -30,6 +32,9 @@ RUN git clone https://github.com/mophos/mmis-frontend-dist \
   && git clone https://github.com/mophos/mmis-planning-backend \
   && cd mmis-planning-backend \
   && mv views/css.pug.txt views/css.pug \
+  && npm i && npm run build && cd .. \
+  && git clone https://github.com/mophos/mmis-documents-management \
+  && cd mmis-documents-management \
   && npm i && npm run build && cd ..
 
 COPY ./server-script/ .

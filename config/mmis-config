@@ -4,6 +4,8 @@ DB_NAME=mmis_new
 DB_USER=mmis
 DB_PASSWORD=12345678
 DB_ENCODING=utf8
+UPLOAD_DIR=/home/mmis/uploaded
+RECEIVE_PREFIX=REV
 
 SECRET_KEY=xxxxxxxxxxxx
 
