@@ -3,7 +3,9 @@ DB_PORT=3306
 DB_NAME=mmis_new
 DB_USER=mmis
 DB_PASSWORD=12345678
+DB_ENCODING=utf8
 
 SECRET_KEY=xxxxxxxxxxxx
 
 SQL_DEBUG=true
+
