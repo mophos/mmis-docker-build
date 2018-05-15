@@ -1,0 +1,9 @@
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=mmis_new
+DB_USER=mmis
+DB_PASSWORD=12345678
+
+SECRET_KEY=xxxxxxxxxxxx
+
+SQL_DEBUG=true

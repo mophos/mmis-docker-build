@@ -1,5 +1,0 @@
-apps:
-  - script   : ./contract-server.js
-    name     : 'contract-web'
-  - script : ./inventory-server.js
-    name   : 'inventory-web'

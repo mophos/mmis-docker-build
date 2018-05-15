@@ -2,10 +2,10 @@ var express = require('express')
 var app = express()
 var path = require('path');
 
-app.use(express.static(path.join(__dirname, './contract')));
+app.use(express.static(path.join(__dirname, './mmis-frontend-dist/management')));
 
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, './contract/index.html'));
+  res.sendFile(path.join(__dirname, './mmis-frontend-dist/management/index.html'));
 });
 
 // catch 404 and forward to error handler
@@ -27,8 +27,8 @@ app.use(function (err, req, res, next) {
   res.send({ ok: false, error: err.message })
 });
 
-let port = 4001;
+let port = 4014;
 
 app.listen(port, function () {
-  console.log(`Purchasing-frontend listening on port ${port}!`)
+  console.log(`Management frontend listening on port ${port}!`)
 });
