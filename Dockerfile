@@ -1,8 +1,12 @@
-FROM mophos/mmis-nginx
+FROM mophos/mmis-node-nginx
 
 LABEL maintainer="Satit Rianpit <rianpit@gmail.com>"
 
 WORKDIR /home/mmis
+
+RUN npm i npm@latest -g
+
+RUN npm i -g pm2
 
 RUN git clone https://github.com/mophos/mmis-frontend-dist \
   && git clone https://github.com/mophos/mmis-inventory-backend \
