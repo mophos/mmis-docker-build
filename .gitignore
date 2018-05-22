@@ -3,3 +3,4 @@ backend/*
 config/.env
 .DS_Store
 node_modules
+uploaded
