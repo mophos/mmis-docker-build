@@ -1,4 +1,4 @@
-FROM mophos/mmis-node-nginx
+FROM mophos/mmis-nginx
 
 LABEL maintainer="Satit Rianpit <rianpit@gmail.com>"
 
