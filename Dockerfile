@@ -12,7 +12,8 @@ RUN git clone https://github.com/mophos/mmis-frontend-dist \
   && git clone https://github.com/mophos/mmis-inventory-backend \
   && cd mmis-inventory-backend \
   && mv views/css.pug.txt views/css.pug \
-  && npm i && npm run build && cd .. \
+  && npm i && npm run build \
+  && cp -r views app/views && cd .. \
   && git clone https://github.com/mophos/mmis-purchase-backend \
   && cd mmis-purchase-backend \
   && mv views/css.pug.txt views/css.pug \
