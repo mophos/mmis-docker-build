@@ -41,6 +41,9 @@ RUN git clone https://github.com/mophos/mmis-frontend-dist \
   && git clone https://github.com/mophos/mmis-documents-management \
   && cd mmis-documents-management \
   && npm i && npm run build && cd ..
+  && git clone https://github.com/mophos/mmis-report-backend \
+  && cd mmis-report-backend \
+  && npm i && npm run build && cd ..
 
 COPY ./server-script/ .
 
