@@ -4,7 +4,7 @@ LABEL maintainer="Satit Rianpit <rianpit@gmail.com>"
 
 WORKDIR /home/mmis
 
-RUN npm i npm@latest -g
+RUN npm i npm@6.4.1 -g
 
 RUN npm i -g pm2
 
