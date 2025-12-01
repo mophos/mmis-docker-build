@@ -1,12 +1,15 @@
-FROM mophos/mmis-nginx
+FROM mophos/mmis-nginx:2.0.1
 
 LABEL maintainer="Satit Rianpit <rianpit@gmail.com>"
 
 WORKDIR /home/mmis
 
-RUN npm i npm@6.4.1 -g
+
+
+#RUN npm i npm@6.4.1 -g
 
 RUN npm i -g pm2
+
 
 RUN git clone https://github.com/mophos/mmis-frontend-dist \
   && git clone https://github.com/mophos/mmis-inventory-backend \
@@ -47,12 +50,12 @@ RUN git clone https://github.com/mophos/mmis-frontend-dist \
 
 COPY ./server-script/ .
 
-RUN npm init -y && npm i express
+RUN npm init -y && npm i express@4.16.2
 
 COPY ./config/nginx.conf /etc/nginx
 
 COPY ./config/process.json .
 
-CMD /usr/sbin/nginx && /usr/bin/pm2-runtime process.json
+CMD /usr/sbin/nginx && /usr/local/bin/pm2-runtime process.json
 
 EXPOSE 80
